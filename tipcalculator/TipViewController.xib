@@ -71,9 +71,20 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                        <rect key="frame" x="28" y="188" width="315" height="16"/>
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
                     </variation>
                 </view>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="sHb-5M-9C1">
+                    <rect key="frame" x="-61" y="-14" width="123" height="29"/>
+                    <segments>
+                        <segment title="10%"/>
+                        <segment title="15%"/>
+                        <segment title="20%"/>
+                    </segments>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="28" y="350" width="315" height="29"/>
+                    </variation>
+                </segmentedControl>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <variation key="default">
@@ -85,6 +96,7 @@
                     <exclude reference="nsZ-ND-I5z"/>
                     <exclude reference="KK7-VG-wzK"/>
                     <exclude reference="hVJ-85-tgA"/>
+                    <exclude reference="sHb-5M-9C1"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -96,6 +108,7 @@
                     <include reference="nsZ-ND-I5z"/>
                     <include reference="KK7-VG-wzK"/>
                     <include reference="hVJ-85-tgA"/>
+                    <include reference="sHb-5M-9C1"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="-86" y="167"/>
