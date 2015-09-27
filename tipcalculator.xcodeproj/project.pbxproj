@@ -14,6 +14,8 @@
 		8F26DBAF1BB87ACE009AC240 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F26DBAE1BB87ACE009AC240 /* Images.xcassets */; };
 		8F26DBB21BB87ACE009AC240 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F26DBB01BB87ACE009AC240 /* LaunchScreen.xib */; };
 		8F26DBBE1BB87ACE009AC240 /* tipcalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F26DBBD1BB87ACE009AC240 /* tipcalculatorTests.m */; };
+		8F26DBCA1BB87C12009AC240 /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F26DBC81BB87C12009AC240 /* TipViewController.m */; };
+		8F26DBCB1BB87C12009AC240 /* TipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F26DBC91BB87C12009AC240 /* TipViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		8F26DBB71BB87ACE009AC240 /* tipcalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipcalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F26DBBC1BB87ACE009AC240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F26DBBD1BB87ACE009AC240 /* tipcalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tipcalculatorTests.m; sourceTree = "<group>"; };
+		8F26DBC71BB87C12009AC240 /* TipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
+		8F26DBC81BB87C12009AC240 /* TipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
+		8F26DBC91BB87C12009AC240 /* TipViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TipViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +94,9 @@
 				8F26DBAE1BB87ACE009AC240 /* Images.xcassets */,
 				8F26DBB01BB87ACE009AC240 /* LaunchScreen.xib */,
 				8F26DBA11BB87ACE009AC240 /* Supporting Files */,
+				8F26DBC71BB87C12009AC240 /* TipViewController.h */,
+				8F26DBC81BB87C12009AC240 /* TipViewController.m */,
+				8F26DBC91BB87C12009AC240 /* TipViewController.xib */,
 			);
 			path = tipcalculator;
 			sourceTree = "<group>";
@@ -201,6 +209,7 @@
 			files = (
 				8F26DBAD1BB87ACE009AC240 /* Main.storyboard in Resources */,
 				8F26DBB21BB87ACE009AC240 /* LaunchScreen.xib in Resources */,
+				8F26DBCB1BB87C12009AC240 /* TipViewController.xib in Resources */,
 				8F26DBAF1BB87ACE009AC240 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +230,7 @@
 			files = (
 				8F26DBAA1BB87ACE009AC240 /* ViewController.m in Sources */,
 				8F26DBA71BB87ACE009AC240 /* AppDelegate.m in Sources */,
+				8F26DBCA1BB87C12009AC240 /* TipViewController.m in Sources */,
 				8F26DBA41BB87ACE009AC240 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
