@@ -65,12 +65,25 @@
     float tipAmount = billAmount * [tipValues[self.tipControl.selectedSegmentIndex] floatValue];
     float totalAmount = tipAmount + billAmount;
 
-    self.tipLabel.text = [NSString stringWithFormat:@"$%0.2f", tipAmount];
-    self.totalLabel.text = [NSString stringWithFormat:@"$%0.2f", totalAmount];
+    //self.tipLabel.text = [NSString stringWithFormat:@"$%0.2f", tipAmount];
+    //self.totalLabel.text = [NSString stringWithFormat:@"$%0.2f", totalAmount];
+
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    [formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+    [formatter setLocale:[NSLocale currentLocale]];
+    [formatter setMaximumFractionDigits:2];
+    [formatter setRoundingMode: NSNumberFormatterRoundDown];
+
+    self.tipLabel.text = [formatter stringFromNumber: [NSNumber numberWithFloat: tipAmount]];
+    self.totalLabel.text = [formatter stringFromNumber: [NSNumber numberWithFloat: totalAmount]];
 }
 
 - (void)onSettingsButton {
     [self.navigationController pushViewController:[[SettingsViewController alloc] init] animated:YES];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+     [self updateValues];
 }
 
 @end
